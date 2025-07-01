@@ -41,7 +41,7 @@ public class Signup {
 
             System.out.println("Test Passed: Account created successfully.");
             
-            Thread.sleep(60000);
+            Thread.sleep(2000);
 
         } catch (Exception e) {
             System.out.println("Test Failed: " + e.getMessage());

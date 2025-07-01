@@ -24,7 +24,7 @@ public class Signout {
             WebElement emailInput = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("email")));
             WebElement passwordInput = driver.findElement(By.id("pass"));
             emailInput.sendKeys("rahul1751205011257@testmail.com");
-            passwordInput.sendKeys("Test@1234");
+            passwordInput.sendKeys("Test@12348");
             //WebElement loginButton = driver.findElement(By.id("send2"));
             //loginButton.click();
             
@@ -36,13 +36,13 @@ public class Signout {
             } catch (Exception e) {
                 System.out.println("Overlay not found or already dismissed.");
             }
-
+            Thread.sleep(2000); // Wait for overlay to be dismissed
             // Proceed with the login button click
             WebElement loginButton = driver.findElement(By.id("send2"));
             ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", loginButton);
             loginButton.click();
 
-          
+            Thread.sleep(2000);
             WebElement button = driver.findElement(By.cssSelector("div[class='panel header'] button[type='button']"));
             button.click();
 
@@ -54,7 +54,7 @@ public class Signout {
             wait.until(ExpectedConditions.urlContains("logout"));
             System.out.println("Test Passed: Signed out successfully.");
 
-            Thread.sleep(60000); // 1 minute pause for manual verification
+            Thread.sleep(2000); // 1 minute pause for manual verification
 
         } catch (Exception e) {
             System.out.println("Test Failed: " + e.getMessage());

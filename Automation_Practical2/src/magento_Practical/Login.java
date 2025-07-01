@@ -26,7 +26,7 @@ public class Login {
 
             // Provide valid credentials (must be an existing account)
             emailInput.sendKeys("rahul1751205011257@testmail.com");
-            passwordInput.sendKeys("Test@1234");
+            passwordInput.sendKeys("Test@12348");
 
             // Click Login button
             WebElement loginButton = driver.findElement(By.id("send2"));
@@ -38,7 +38,7 @@ public class Login {
             System.out.println("Test Passed: Logged in successfully.");
 
             // Keep browser open for an additional 1 minute for manual inspection
-            Thread.sleep(60000); // 60,000 ms = 1 minute
+            Thread.sleep(2000); // 60,000 ms = 1 minute
 
         } catch (Exception e) {
             System.out.println("Test Failed: " + e.getMessage());

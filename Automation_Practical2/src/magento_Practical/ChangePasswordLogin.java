@@ -19,8 +19,8 @@ public class ChangePasswordLogin {
          
         String baseUrl = "https://magento.softwaretestingboard.com";
         String email = "rahul1751205011257@testmail.com";
-        String oldPassword = "Test@12347";
-        String newPassword = "Test@12348";
+        String oldPassword = "Test@12348";
+        String newPassword = "Test@12349";
        
 
         driver.manage().window().maximize();
